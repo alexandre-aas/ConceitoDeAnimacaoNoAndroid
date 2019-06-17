@@ -1,3 +1,4 @@
 <resources>
+    <string name="info">Animações no Android</string>
     <string name="app_name">ConceitoDeAnimacaoNoAndroid</string>
 </resources>
