@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:padding="10dp"
+	android:id="@+id/layout"
+>
+	<ViewFlipper
+		android:id="@+id/flip"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:text="@string/info"
+	>
+		<!-- View 1 -->
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+		>
+		    <TextView  
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:text="Login"
+		    />
+		    <EditText
+				android:id="@+id/tLogin"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content" 
+		    />
+		    <TextView
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:text="Senha"
+		    />
+		    <EditText
+		    	android:id="@+id/tSenha"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content" 
+		    	android:inputType="textPassword"
+		    />		    
+			<Button
+				android:id="@+id/btLogin"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:text="Fazer Login"
+			    android:layout_gravity="center_horizontal"
+			    />
+		</LinearLayout>
+		<!-- View 2 -->
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+		>
+		    <TextView  
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:text="Bem vindo ao sistema!"
+				android:textStyle="bold"
+		    />
+		</LinearLayout>
+	    </ViewFlipper>
+</LinearLayout>
+
+	<!-- android:password="true" -->

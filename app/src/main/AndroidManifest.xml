@@ -18,8 +18,13 @@
         </activity>
         <activity android:name=".animacoes.AlphaAnimacao" />
         <activity android:name=".animacoes.RotateAnimacao" />
+        <activity android:name=".animacoes.ScaleAnimacao" />
         <activity android:name=".animacoes.TranslateAnimacao" />
         <activity android:name=".animacoes.ListaDeAnimacoes" />
+        <activity android:name=".animacoes.AnimacaoListenerApagarTela" />
+        <activity android:name=".animacoes.GerenciadoDeLayoutViewFlipper_Login" />
+        <activity android:name=".animacoes.AnimacaoViewCustomizada" />
+        <activity android:name=".animacoes.SimularProblemasAPI_Antiga_Animacao" />
     </application>
 
 </manifest>

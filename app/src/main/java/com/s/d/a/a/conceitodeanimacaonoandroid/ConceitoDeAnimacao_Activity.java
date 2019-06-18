@@ -8,21 +8,26 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.s.d.a.a.conceitodeanimacaonoandroid.animacoes.AlphaAnimacao;
+import com.s.d.a.a.conceitodeanimacaonoandroid.animacoes.AnimacaoListenerApagarTela;
+import com.s.d.a.a.conceitodeanimacaonoandroid.animacoes.AnimacaoViewCustomizada;
+import com.s.d.a.a.conceitodeanimacaonoandroid.animacoes.GerenciadoDeLayoutViewFlipper_Login;
 import com.s.d.a.a.conceitodeanimacaonoandroid.animacoes.ListaDeAnimacoes;
 import com.s.d.a.a.conceitodeanimacaonoandroid.animacoes.RotateAnimacao;
 import com.s.d.a.a.conceitodeanimacaonoandroid.animacoes.ScaleAnimacao;
+import com.s.d.a.a.conceitodeanimacaonoandroid.animacoes.SimularProblemasAPI_Antiga_Animacao;
 import com.s.d.a.a.conceitodeanimacaonoandroid.animacoes.TranslateAnimacao;
 
 public class ConceitoDeAnimacao_Activity extends ListActivity {
     private static final String[] ops = new String[] {
-            "Alpha",
-            "Rotate",
-            "Scale",
-            "Translate",
-            "AnimationSet",
-            "AnimationListener",
-            "ViewFlipper",
-            "View Animada",
+            "Animacao Alpha",
+            "Animacao Rotate",
+            "Animacao Scale",
+            "Animacao Translate",
+            "Lista De Animações",
+            "Animacao Listener",
+            "Animacao ViewFlipper",
+            "View Animada Customizada",
+            "Simular Problemas API Antiga",
             "Sair" };
     @Override
     public void onCreate(Bundle icicle) {
@@ -51,16 +56,16 @@ public class ConceitoDeAnimacao_Activity extends ListActivity {
                 startActivity(new Intent(this, ListaDeAnimacoes.class));
                 break;
             case 5:
-                //startActivity(new Intent(this, .class));
+                startActivity(new Intent(this, AnimacaoListenerApagarTela.class));
                 break;
             case 6:
-                //startActivity(new Intent(this, .class));
+                startActivity(new Intent(this, GerenciadoDeLayoutViewFlipper_Login.class));
                 break;
             case 7:
-                //startActivity(new Intent(this, .class));
+                startActivity(new Intent(this, AnimacaoViewCustomizada.class));
                 break;
             case 8:
-                //startActivity(new Intent(this, .class));
+                startActivity(new Intent(this, SimularProblemasAPI_Antiga_Animacao.class));
                 break;
             default:
                 finish();
